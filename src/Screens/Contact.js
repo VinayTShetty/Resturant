@@ -54,7 +54,7 @@ export default class Users extends Component {
                     <Text style={styles.name}>{item.name}</Text>
                     <Text style={styles.position}>{item.position}</Text>
                     <TouchableOpacity style={styles.followButton} onPress={()=> this.clickEventListener(item)}>
-                      <Text style={styles.followButtonText}>Follow</Text>  
+                      <Text style={styles.followButtonText}>Detials</Text>  
                     </TouchableOpacity>
                   </View>
                 </View>
