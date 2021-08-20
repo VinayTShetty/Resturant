@@ -48,9 +48,6 @@ export default class Users extends Component {
           renderItem={({item}) => {
             return (
               <TouchableOpacity style={styles.card} onPress={() => {this.clickEventListener(item)}}>
-                <View style={styles.cardHeader}>
-                  <Image style={styles.icon} source={{uri:"https://img.icons8.com/flat_round/64/000000/hearts.png"}}/>
-                </View>
                 <Image style={styles.userImage} source={{uri:item.image}}/>
                 <View style={styles.cardFooter}>
                   <View style={{alignItems:"center", justifyContent:"center"}}>
