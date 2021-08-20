@@ -11,12 +11,11 @@ import {
 } from 'react-native';
 
 export default class Users extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
       data: [
-        {id:1, name: "Mark Doe",   position:"CEO",               image:"https://bootdey.com/img/Content/avatar/avatar7.png"},
+        {id:1, name: "Doe",   position:"CTO",                    image:"https://freefoodphotos.com/images/content/homeslider2.jpg"},
         {id:1, name: "John Doe",   position:"CTO",               image:"https://bootdey.com/img/Content/avatar/avatar1.png"},
         {id:2, name: "Clark Man",  position:"Creative designer", image:"https://bootdey.com/img/Content/avatar/avatar6.png"} ,
         {id:3, name: "Jaden Boor", position:"Front-end dev",     image:"https://bootdey.com/img/Content/avatar/avatar5.png"} ,
@@ -68,7 +67,7 @@ export default class Users extends Component {
 
 const styles = StyleSheet.create({
   container:{
-    flex:1,
+    flex:5,
     marginTop:20,
   },
   list: {
@@ -82,16 +81,16 @@ const styles = StyleSheet.create({
   card:{
     shadowColor: '#00000021',
     shadowOffset: {
-      width: 100,
-      height: 1,
+      width: 900,
+      height: 10,
     },
-    shadowOpacity: 0.37,
-    shadowRadius: 7.49,
+    shadowOpacity: 0.90,
+    shadowRadius: 9.49,
     elevation: 20,
 
-    marginVertical: 5,
+    marginVertical: 25,
     backgroundColor:"white",
-    flexBasis: '46%',
+    flexBasis: '96%',
     marginHorizontal: 5,
   },
   cardFooter: {
@@ -117,9 +116,9 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 1,
   },
   userImage:{
-    height: 120,
+    height: 150,
     width: 300,
-    borderRadius:60,
+ 
     alignSelf:'center',
     borderColor:"#DCDCDC",
     borderWidth:3,
