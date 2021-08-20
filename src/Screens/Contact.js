@@ -92,7 +92,7 @@ export default class Users extends Component {
           contentContainerStyle={styles.listContainer}
           data={this.state.data}
           horizontal={false}
-          numColumns={2}
+          numColumns={1}
           keyExtractor= {(item) => {
             return item.id;
           }}
@@ -136,12 +136,12 @@ const styles = StyleSheet.create({
   card:{
     shadowColor: '#00000021',
     shadowOffset: {
-      width: 0,
-      height: 6,
+      width: 100,
+      height: 1,
     },
     shadowOpacity: 0.37,
     shadowRadius: 7.49,
-    elevation: 12,
+    elevation: 20,
 
     marginVertical: 5,
     backgroundColor:"white",
@@ -172,7 +172,7 @@ const styles = StyleSheet.create({
   },
   userImage:{
     height: 120,
-    width: 120,
+    width: 300,
     borderRadius:60,
     alignSelf:'center',
     borderColor:"#DCDCDC",
