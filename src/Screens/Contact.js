@@ -20,7 +20,7 @@ export default class Users extends Component {
     super(props);
     this.state = {
       data: [
-        {id:1, name: "John Doe",   position:"CTO",               image:"https://bootdey.com/img/Content/avatar/avatar1.png"},
+        {id:1, name: "John Doe",   position:"CTO",               image:IMAGES.image1},
         {id:2, name: "Clark Man",  position:"Creative designer", image:"https://bootdey.com/img/Content/avatar/avatar6.png"} ,
         {id:3, name: "Jaden Boor", position:"Front-end dev",     image:"https://bootdey.com/img/Content/avatar/avatar5.png"} ,
         {id:4, name: "Srick Tree", position:"Backend-end dev",   image:"https://bootdey.com/img/Content/avatar/avatar4.png"} ,
@@ -57,8 +57,7 @@ export default class Users extends Component {
                  
                 
                 style={styles.userImage}
-             
-                 source={IMAGES.image1}
+                 source={item.image}
                  
                  />
                 <View style={styles.cardFooter}>
