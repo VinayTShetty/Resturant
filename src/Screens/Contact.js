@@ -10,12 +10,16 @@ import {
   FlatList,
 } from 'react-native';
 
+
+const IMAGES = {
+  image1: require('../Screens/pizza.jpg')
+};
+
 export default class Users extends Component {
   constructor(props) {
     super(props);
     this.state = {
       data: [
-        {id:1, name: "Doe",   position:"CTO",                    image:"https://freefoodphotos.com/images/content/homeslider2.jpg"},
         {id:1, name: "John Doe",   position:"CTO",               image:"https://bootdey.com/img/Content/avatar/avatar1.png"},
         {id:2, name: "Clark Man",  position:"Creative designer", image:"https://bootdey.com/img/Content/avatar/avatar6.png"} ,
         {id:3, name: "Jaden Boor", position:"Front-end dev",     image:"https://bootdey.com/img/Content/avatar/avatar5.png"} ,
@@ -24,7 +28,7 @@ export default class Users extends Component {
         {id:6, name: "John Doe",   position:"Manager",           image:"https://bootdey.com/img/Content/avatar/avatar2.png"} ,
         {id:8, name: "John Doe",   position:"IOS dev",           image:"https://bootdey.com/img/Content/avatar/avatar1.png"} ,
         {id:9, name: "John Doe",   position:"Web dev",           image:"https://bootdey.com/img/Content/avatar/avatar4.png"} ,
-        {id:9, name: "John Doe",   position:"Analyst",           image:"https://bootdey.com/img/Content/avatar/avatar7.png"} ,
+        {id:11, name: "John Doe",   position:"Analyst",           image:"https://bootdey.com/img/Content/avatar/avatar7.png"} ,
       ]
     };
   }
@@ -32,6 +36,8 @@ export default class Users extends Component {
   clickEventListener(item) {
     Alert.alert(item.name)
   }
+
+  
 
   render() {
     return (
@@ -47,7 +53,14 @@ export default class Users extends Component {
           renderItem={({item}) => {
             return (
               <TouchableOpacity style={styles.card} onPress={() => {this.clickEventListener(item)}}>
-                <Image style={styles.userImage} source={{uri:item.image}}/>
+                <Image 
+                 
+                
+                style={styles.userImage}
+             
+                 source={IMAGES.image1}
+                 
+                 />
                 <View style={styles.cardFooter}>
                   <View style={{alignItems:"center", justifyContent:"center"}}>
                     <Text style={styles.name}>{item.name}</Text>
