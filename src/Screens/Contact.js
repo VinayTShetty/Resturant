@@ -27,7 +27,7 @@ export default class Users extends Component {
         {id:2, name: "King Restaurant",  position:"Meals", image:IMAGES.image2} ,
         {id:3, name: "ABC Restauratnt", position:"Potato Fries",     image:IMAGES.image3} ,
         {id:4, name: "Ginger Restaurant", position:"Sand Witch",   image:IMAGES.image4} ,
-        {id:5, name: "Granny Restaurant", position:"Chicken",   image:IMAGES.image5} ,
+        {id:5, name: "Tasty Restaurant", position:"Chicken",   image:IMAGES.image5} ,
       ]
     };
   }
@@ -60,7 +60,9 @@ export default class Users extends Component {
                   <View style={{alignItems:"center", justifyContent:"center"}}>
                     <Text style={styles.name}>{item.name}</Text>
                     <Text style={styles.position}>{item.position}</Text>
-                    <TouchableOpacity style={styles.followButton} onPress={()=> this.clickEventListener(item)}>
+                    <TouchableOpacity style={styles.followButton} onPress={()=> 
+                      this.props.navigation.navigate('About')
+                    }>
                       <Text style={styles.followButtonText}>Detials</Text>  
                     </TouchableOpacity>
                   </View>
