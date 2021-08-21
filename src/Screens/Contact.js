@@ -61,7 +61,7 @@ export default class Users extends Component {
                     <Text style={styles.name}>{item.name}</Text>
                     <Text style={styles.position}>{item.position}</Text>
                     <TouchableOpacity style={styles.followButton} onPress={()=> 
-                      this.props.navigation.navigate('About')
+                      this.props.navigation.navigate('Detailsscreenvinay')
                     }>
                       <Text style={styles.followButtonText}>Detials</Text>  
                     </TouchableOpacity>

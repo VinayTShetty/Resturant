@@ -1,6 +1,6 @@
 import React from 'react'
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { About, Contatct, AboutApp } from '../Screens'
+import { About, Contatct, AboutApp,Detailsscreen} from '../Screens'
 const Drawer = createDrawerNavigator();
 export default DrawerNavigator = () => {
     return(
@@ -9,6 +9,7 @@ export default DrawerNavigator = () => {
             <Drawer.Screen name="Contact" component={Contatct} />
             <Drawer.Screen name="AboutApp" component={AboutApp} />
             <Drawer.Screen name="About" component={About} />
+            <Drawer.Screen name="Detailsscreenvinay" component={Detailsscreen} />
         </Drawer.Navigator>
     )
 }
