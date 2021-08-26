@@ -1,11 +1,9 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import {Drawer} from './src/Navigation';
+import {AppContainer} from './src/Navigation';
 
 export default App = () => {
   return(
-    <NavigationContainer>
-      <Drawer />
-    </NavigationContainer>
+    <AppContainer />
   )
 }
