@@ -1,9 +1,9 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import {AppContainer} from './src/Navigation';
+import { StyleSheet, Text, View } from 'react-native';
+import AppContainer from './src/navigations/AppNavigation';
 
-export default App = () => {
-  return(
-    <AppContainer />
-  )
+export default function App() {
+  return (
+     <AppContainer />
+  );
 }
