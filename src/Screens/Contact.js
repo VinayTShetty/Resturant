@@ -33,7 +33,8 @@ export default class Users extends Component {
   }
 
   clickEventListener(item) {
-    Alert.alert(item.name)
+  //  Alert.alert(item.name)
+    this.props.navigation.navigate('menudetails')
   }
 
   
@@ -61,7 +62,7 @@ export default class Users extends Component {
                     <Text style={styles.name}>{item.name}</Text>
                     <Text style={styles.position}>{item.position}</Text>
                     <TouchableOpacity style={styles.followButton} onPress={()=> 
-                      this.props.navigation.navigate(' ')
+                    console.log("vinay")
                     }>
                       <Text style={styles.followButtonText}>Detials</Text>  
                     </TouchableOpacity>

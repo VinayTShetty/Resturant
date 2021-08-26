@@ -9,7 +9,7 @@ export default DrawerNavigator = () => {
             <Drawer.Screen name="Contact" component={Contatct} />
             <Drawer.Screen name="AboutApp" component={AboutApp} />
             <Drawer.Screen name="About" component={About} />
-            <Drawer.Screen name=" " component={Detailsscreen} />
+            <Drawer.Screen name="Detailsscreen" component={Detailsscreen} />
         </Drawer.Navigator>
     )
 }
